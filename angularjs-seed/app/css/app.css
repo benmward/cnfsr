@@ -8,21 +8,22 @@
   padding: 0 0 0.5em;*/
   position:fixed;
   background: rgba(255, 255, 255, 0.5);
-  left:33%;
-  margin-top:23%;
-  max-width:33%;
+  left:35%;
+  margin-top:17%;
+  max-width:30%;
   height:auto;
   max-height:60%;
   width:50%;
   text-align:center;
   clear:left;
   border-radius:10px;
+  overflow:hidden;
 }
 
 .headerimg {
 	position:fixed;
-	width:80%;
-	margin-left:10%;
+	width:60%;
+	margin-left:20%;
 	float:left;
 }
 /*.menu:before {
@@ -92,17 +93,23 @@ input {
 
 .form-control {
 	background-color:#FFFFFF;
+	font-family: 'Signika', sans-serif;
 	border-radius:5px;
 	margin-top:5px;
 	margin-bottom:5px;
+	margin-right:5%;
 	border:none;
-	height:35px;
-	width:85%;
+	height:40px;
+	width:90%;
 }
 .button {
 	background-color:#faae50;
-	height:35px;
-	width:85%;
+	font-family: 'Signika', sans-serif;
+	font-size:14px;
+	color:#FFF;
+	margin-right:5%;
+	height:40px;
+	width:90%;
 	margin-top:5px;
 	border-bottom:2px, solid;
 	border-top:none;
@@ -115,8 +122,20 @@ input {
 .button_social {
 	height:auto;
 	width:auto;
-	margin-top:none;
+	margin:auto;
 	border:none;
 	border-radius:5px;
 	background:none;
+}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {
+	font-family: 'Signika', sans-serif;
+	text-align:center;
+	color:#f15b22;
 }
