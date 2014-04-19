@@ -1,10 +1,14 @@
 Cnfsr - The College Confessions Website
 
-Version 0.1
+Version 0.2.4
 
 New updates:
-- Node modules and MEAN set up
-- Basic local git initialization
+- Continuing work on bootstrap for splash page
+- Logo designed
 
 Old updates:
-- None yet
+- Bootstrap added
+- Divs for login/register set up on splash page
+- Splash page set up with background
+- Node modules and MEAN set up
+- Basic local git initialization
