@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <title>CNFSR - Your college confessions</title>
   <link rel="stylesheet" href="css/app.css"/>
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+  <!--<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">!-->
   <link rel="shortcut icon" href="img/favicon.png"
     type="image/x-icon" />
 </head>
@@ -34,16 +34,23 @@
 			<label for="InputPassword"></label>
 			<input type="password" class="form-control" id="InputPassword" placeholder="Password">
 		  </div>
-		  <button type="button" value="register" class="btn btn-success">Register</button>
-		  <br><br><h4><em>OR...</em></h4><br>
-		  <button type="button" value="fbreg" class="btn btn-primary">Login with Facebook</button>
+        <button value="register" class="button">Register</button>
+		  <br><h4>Or you can log in with one of these</h4>
+		  <button value="fbreg" class="button_social"><img src="img/facebook_icon.png"
+        </button>
+      <button value="fbreg" class="button_social"><img src="img/twitter_icon.png"
+        </button>
+      <button value="fbreg" class="button_social"><img src="img/google_icon.png"
+        </button>
 		</div>
-		<!--<div class="registerbutton">
+  		<!--<div class="registerbutton">
 		  <br><h3><em>OR...</em></h3><br><br><br><br>
 		  <button type="button" value="fbreg" class="btn btn-primary">Login with Facebook</button>
 	    </div>-->
 	  </form>
-	  <div class="elsebutton">fuck</div>
+	  <div class="elsebutton">Already have an account?
+      <button value="login" class="button">Login</button>
+    </div>
   </div>
 
   <div ng-view></div>
