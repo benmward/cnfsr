@@ -1,5 +1,15 @@
 /* app css stylesheet */
 
+#under {
+	margin-top:80px;
+	margin-left:30%;
+	width:40%;
+	
+}
+
+body {
+	background: rgb(65, 64, 66);
+}
 
 .menu {
   /*list-style: none;
@@ -7,7 +17,7 @@
   margin-bottom: 2em;
   padding: 0 0 0.5em;*/
   position:fixed;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.3);
   left:35%;
   margin-top:17%;
   max-width:30%;
@@ -25,6 +35,32 @@
 	width:60%;
 	margin-left:20%;
 	float:left;
+}
+
+.navbar {
+	min-width:100%;
+	padding:none;
+	height:72px;
+	width:100%;
+	left:0%;
+	background: rgba(109, 110, 113, 0.7);
+	border-bottom:2px #1a1a1a;
+	position:fixed;
+}
+
+.navigation {
+	float:right;
+	padding:15px;
+	font-family: 'Signika', sans-serif;
+	font-size:24px;
+	text-align:center;
+	text-decoration:none;
+	color:white;
+}
+
+#navlogo {
+	float:left;
+	padding:8px;
 }
 /*.menu:before {
   content: "[";
@@ -128,7 +164,9 @@ input {
 	background:none;
 }
 
-h1 {}
+h1 {
+
+}
 
 h2 {}
 
