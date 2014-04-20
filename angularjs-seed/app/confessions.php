@@ -37,10 +37,10 @@ session_start();
 					</form>
 					
 				</div>
-				<div class="university-name">
-					<h1>George Mason University Confessions</h1>
-				</div>
 				<div class="confessions">
+					<div class="tophead">
+						<h1>George Mason University Confessions</h1>
+					</div>
 				
 				<?php
 				

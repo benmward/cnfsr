@@ -110,6 +110,7 @@ input {
 	margin-bottom:5px;
 	margin-left:1%;
 	border:none;
+	min-height:25px;
 	width:75%;
 }
 
@@ -125,7 +126,7 @@ input {
 	border-bottom:2px, solid;
 	border-top:none;
 	border-left:none;
-	border-right:none;
+	border-right:none;thu
 	border-color:#f15b22;
 	border-radius:5px;
 }
