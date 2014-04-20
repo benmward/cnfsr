@@ -154,7 +154,7 @@ body {
 	height:72px;
 	width:100%;
 	left:0%;
-	background: rgba(255, 255, 255, 0.5);
+	background: rgba(100, 100, 100, 0.7);
 	border-bottom:2px #1a1a1a;
 	position:fixed;
 }
@@ -226,14 +226,21 @@ body {
 /*main styling for confessions page*/
 .sidebar {
 	float:left;
-	margin-top:72px;
+	margin-top:100px;
 	background:rgba(255, 255, 255, 0.5);
 	width:25%;
 	height:100%;
 	position:fixed;
 }
 
-.confessions {}
+.confessions {
+	float:right;
+	width:55%;
+	margin-right:10%;
+	margin-left:10%;
+	margin-top:200px;
+	background: rgba(100, 100, 100, 0.7);
+}
 /*styling across all pages*/
 h1 {
 	font-family: 'Signika', sans-serif;
