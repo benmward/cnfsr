@@ -50,9 +50,10 @@ session_start();
 				    
 				    ?>
 			        
-			        <p> <?php $confs[$i]; ?> </p>
+			        <p> <?php echo $confs[$i]; ?> </p>
 			        
 			        <form action="submit.php" method="post">
+
 			        
 			        <input class="form-control2" type="text" placeholder="comment"/>
 			        <input class="button2" type="submit"/>
