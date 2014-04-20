@@ -12,21 +12,28 @@ if(!in_array($email,$emaillist) && !in_array($user,$userlist)){
     
     if(file_get_contents("txt/emails.txt") == ""){
         
-        echo "first";
+        //echo "first";
+
         
         file_put_contents("txt/emails.txt", $email, FILE_APPEND | LOCK_EX);
         file_put_contents("txt/usernames.txt", $user, FILE_APPEND | LOCK_EX);
         file_put_contents("txt/passwords.txt", $pass, FILE_APPEND | LOCK_EX);
         
-        echo "done";
+       
+        //echo "done";
+        header('Location: uni_select.php');
+
         
     }else{
         
-        echo "sec";
+        //echo "sec";
+        header('Location: uni_select.php');
         
         file_put_contents("txt/emails.txt", ",".$email, FILE_APPEND | LOCK_EX);
         file_put_contents("txt/usernames.txt", ",".$user, FILE_APPEND | LOCK_EX);
         file_put_contents("txt/passwords.txt", ",".$pass, FILE_APPEND | LOCK_EX);
+
+    
     }
     
 }else{
