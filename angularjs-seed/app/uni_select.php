@@ -16,9 +16,9 @@
 	    			<div class="navigation">
 	    				<nav>
 	    					<a class="navigation" href="index2.html">Logout</a>
-	    					<a class="navigation" href="#">an example link</a>
-	    					<a class="navigation" href="#">an example link</a>
-	    					<a class="navigation" href="#">an example link</a>
+	    					<a class="navigation" href="#">Settings</a>
+	    					<a class="navigation" href="#">Favorites</a>
+	    					<a class="navigation" href="uni_select.php">Home</a>
 	    				</nav>
 	    			</div>
     			</div>
@@ -30,8 +30,8 @@
                         <img src="img/viewall_logo.png" />
                     </div>
                     <div class="uni-item">
-                        <img src="img/GMU_logo.png" />
-                    </div>
+                        <a href="confessions.php"><img src="img/GMU_logo.png" />
+                    </div></a>
                     <div class="uni-item">
                         <img src="img/VT_logo.png" />
                     </div>
