@@ -19,9 +19,9 @@ session_start();
 		    		<div class="navigation">
 		    			<nav>
 		    				<a class="navigation" href="index2.html">Logout</a>
-		    				<a class="navigation" href="#">an example link</a>
-		   					<a class="navigation" href="#">an example link</a>
-		   					<a class="navigation" href="#">an example link</a>
+	    					<a class="navigation" href="#">Settings</a>
+	    					<a class="navigation" href="#">Favorites</a>
+	    					<a class="navigation" href="uni_select.php">Home</a>
 		    			</nav>
 		    		</div>
 	    		</div>
@@ -51,7 +51,7 @@ session_start();
 			        <form>
 			        
 			        <input type="text" placeholder="comment"/>
-			        <input type="submit"/>
+			        <input class="button" type="submit"/>
 			        
 			        </form>
 			        
