@@ -110,7 +110,6 @@ input {
 	margin-bottom:5px;
 	margin-left:1%;
 	border:none;
-	height:24px;
 	width:75%;
 }
 
@@ -215,12 +214,6 @@ body {
 	position:fixed;
 }
 
-.university-name {
-	float:right;
-	margin-top:72px;
-	height:128px;
-	width:70%;
-}
 .confessions {
 	float:right;
 	width:70%;
@@ -233,7 +226,7 @@ body {
 /*styling across all pages*/
 h1 {
 	font-family: 'Signika', sans-serif;
-	font-size:35px;
+	font-size:40px;
 	text-align:center;
 	color:#ffffff;
 
