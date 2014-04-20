@@ -28,8 +28,8 @@ session_start();
 			</header>
 			<main>
 				<div class="sidebar">
-					<h4><?php  echo $_SESSION['username'];  ?></h4>
-					<h4><?php echo $_SESSION['email'];  ?></h4>
+					<h2><?php  echo $_SESSION['username'];  ?></h2>
+					<h2><?php echo $_SESSION['email'];  ?></h2>
 					
 					<form action="submit.php" method="post">
 					    <input class="form-control2" type="text" name="conf" id="conf"/>
