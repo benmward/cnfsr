@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+	<html lang="en" ng-app="myApp">
+	  <head>
+	    <meta charset="utf-8">
+	    <title>CNFSR - Your college confessions</title>
+	    <link rel="stylesheet" href="css/app.css"/>
+	    <!--<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">!-->
+	    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Signika:300' rel='stylesheet' type='text/css'>
+	    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+	  </head>
+
+	  <body>
+	    <img class="background" src="img/background_2.jpg" />
+	    <div>
+	    	<img class="headerimg" src="img/Logo-1500.png" />
+	    </div>
+	    <div class="menu">
+	  	  <!--<ul class="menu">
+	  		<li><a href="#/view1">view1</a></li>
+	  		<li><a href="#/view2">view2</a></li>
+	  	  </ul>-->
+	  	  <form role="form" action="login.php" method="post">
+	  		<div class="registerform">
+	  		  <h1><em><strong>Welcome back!</strong></em></h1>
+	  		  <div class="form-group">
+	  			<label for="username"></label>
+	  			<input type="username" class="form-control" id="username" name="username" placeholder="Username">
+	  		  </div>
+	  		  <div class="form-group">
+	  			<label for="InputPassword"></label>
+	  			<input type="password" class="form-control" id="password" name="password" placeholder="Password">
+	  		  </div>
+	            <input type="submit" value="Login"/>
+	  		</div>
+	    <div ng-view></div>
+
+	    <!--<div class="menu">Angular seed app: v<span app-version></span></div>-->
+
+	    <!-- In production use:
+	    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	    -->
+	    <script src="lib/angular/angular.js"></script>
+	    <script src="lib/angular/angular-route.js"></script>
+	    <script src="js/app.js"></script>
+	    <script src="js/services.js"></script>
+	    <script src="js/controllers.js"></script>
+	    <script src="js/filters.js"></script>
+	    <script src="js/directives.js"></script>
+	    <script src="js/jQuery.js"></script>
+	    <script src="js/express/index.js"></script>
+	    <script src="js/mongoose/index.js"></script>
+	    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	    <html>
+
+	  </body>
+	</html>

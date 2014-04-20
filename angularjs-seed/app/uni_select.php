@@ -15,7 +15,7 @@
 	    			</div>
 	    			<div class="navigation">
 	    				<nav>
-	    					<a class="navigation" href="#">an example link</a>
+	    					<a class="navigation" href="index2.html">Logout</a>
 	    					<a class="navigation" href="#">an example link</a>
 	    					<a class="navigation" href="#">an example link</a>
 	    					<a class="navigation" href="#">an example link</a>
@@ -24,19 +24,22 @@
     			</div>
     		</header>
     		<main>
-    			<img id="under" src="img/uni_select_head.png" />
+    			<img id="under" src="img/Uni_select_head.png" />
     			<div class="frame">
+    				<div class="uni-item">
+    					<img src="img/viewall_logo.png" />
+    				</div>
     				<div class="uni-item">
     					<img src="img/GMU_logo.png" />
     				</div>
     				<div class="uni-item">
     					<img src="img/VT_logo.png" />
     				</div>
+                    <div class="uni-item">
+                        <img src="img/w&m_logo.png" />
+                    </div>
     				<div class="uni-item">
-    					<img src="img/JMU_logo.png" />
-    				</div>
-    				<div class="uni-item">
-    					<img src="img/UVA_logo.png" />
+    					<img src="img/UVA_Logo.png" />
     				</div>
     				<div class="uni-item">
     					<img src="img/TA&M_logo.png" />
@@ -45,28 +48,25 @@
     					<img src="img/Rutgers_logo.png" />
     				</div>
     				<div class="uni-item">
-    					<img src="img/Upenn_logo.png" />
+    					<img src="img/UPenn_logo.png" />
     				</div>
     				<div class="uni-item">
-    					<img src="img/GMU_logo.png" />
+    					<img src="img/FSU_logo.png" />
+    				</div>
+                    <div class="uni-item">
+                        <img src="img/UMD_logo.png" />
+                    </div>
+    				<div class="uni-item">
+    					<img src="img/JMU_logo.png" />
     				</div>
     				<div class="uni-item">
-    					<img src="img/GMU_logo.png" />
+    					<img src="img/Carnegie_logo.png" />
     				</div>
     				<div class="uni-item">
-    					<img src="img/GMU_logo.png" />
+    					<img src="img/Radford_logo.png" />
     				</div>
     				<div class="uni-item">
-    					<img src="img/GMU_logo.png" />
-    				</div>
-    				<div class="uni-item">
-    					<img src="img/GMU_logo.png" />
-    				</div>
-    				<div class="uni-item">
-    					<img src="img/GMU_logo.png" />
-    				</div>
-    				<div class="uni-item">
-    					<img src="img/GMU_logo.png" />
+    					<img src="img/clemson_logo.png" />
     				</div>
     				<div class="uni-item">
     					<img src="img/GMU_logo.png" />

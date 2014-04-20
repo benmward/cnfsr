@@ -1,79 +1,123 @@
 <!doctype html>
 <html lang="en" ng-app="myApp">
-<head>
-  <meta charset="utf-8">
-  <title>CNFSR - Your college confessions</title>
-  <link rel="stylesheet" href="css/app.css"/>
-  <!--<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">!-->
-  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Signika:300' rel='stylesheet' type='text/css'>
-  <link rel="shortcut icon" href="img/favicon.png"
-    type="image/x-icon" />
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>CNFSR - Your college confessions</title>
+    <link rel="stylesheet" href="css/app.css"/>
+    <!--<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">!-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Signika:300' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="img/favicon.png"
+      type="image/x-icon" />
+    <div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '{237270409797056}',
+    status     : true, // check login status
+    cookie     : true, // enable cookies to allow the server to access the session
+    xfbml      : true  // parse XFBML
+  });
 
-<body>
-  <img class="background" src="img/background_2.jpg" />
-  <div>
-  	<img class="headerimg" src="img/Logo-1500.png" />
-  </div>
-  <div class="menu">
-	  <!--<ul class="menu">
-		<li><a href="#/view1">view1</a></li>
-		<li><a href="#/view2">view2</a></li>
-	  </ul>-->
-	  <form role="form">
-		<div class="registerform">
-		  <div class="form-group">
-			<label for="InputEmail"></label>
-			<input type="email" class="form-control" id="InputEmail" placeholder="Enter email">
-		  </div>
-		  <div class="form-group">
-			<label for="InputUsername"></label>
-			<input type="username" class="form-control" id="InputUsername" placeholder="Username">
-		  </div>
-		  <div class="form-group">
-			<label for="InputPassword"></label>
-			<input type="password" class="form-control" id="InputPassword" placeholder="Password">
-		  </div>
-          <a href=uni_select.html>
-			<button value="register" class="button" onClick="parent.location='uni_select.html'">Register</button>
-		  </a>
-		    <h4>Or you can log in with one of these:</h4>
-		  <button value="fbreg" class="button_social"><img src="img/facebook_icon.png"
-        </button>
-      <button value="fbreg" class="button_social"><img src="img/twitter_icon.png"
-        </button>
-      <button value="fbreg" class="button_social"><img src="img/google_icon.png"
-        </button>
-		</div>
-  		<!--<div class="registerbutton">
-		  <br><h3><em>OR...</em></h3><br><br><br><br>
-		  <button type="button" value="fbreg" class="btn btn-primary">Login with Facebook</button>
-	    </div>-->
-	  </form>
-	  <div class="elsebutton">
-      <button value="login" class="button">Already have an account?</button>
+  FB.Event.subscribe('auth.authResponseChange', function(response) {
+
+    if (response.status === 'connected') {
+
+      testAPI();
+    } else if (response.status === 'not_authorized') {
+
+      FB.login();
+    } else {
+
+      FB.login();
+    }
+  });
+  };
+
+  (function(d){
+   var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+   if (d.getElementById(id)) {return;}
+   js = d.createElement('script'); js.id = id; js.async = true;
+   js.src = "http://connect.facebook.net/en_US/all.js";
+   ref.parentNode.insertBefore(js, ref);
+  }(document));
+
+  function testAPI() {
+    console.log('Welcome!  Fetching your information.... ');
+    FB.api('/me', function(response) {
+      console.log('Good to see you, ' + response.name + '.');
+    });
+  }
+</script>
     </div>
-  </div>
+  </head>
 
-  <div ng-view></div>
+  <body>
+    <img class="background" src="img/background_2.jpg" />
+    <div>
+    	<img class="headerimg" src="img/Logo-1500.png" />
+    </div>
+    <div class="menu">
+  	  <!--<ul class="menu">
+  		<li><a href="#/view1">view1</a></li>
+  		<li><a href="#/view2">view2</a></li>
+  	  </ul>-->
+  	  <form role="form" action="register.php" method="post">
+  		<div class="registerform">
+  		  <div class="form-group">
+  			<label for="InputEmail"></label>
+  			<input type="email" name="email" class="form-control" id="email" placeholder="Enter email">
+  		  </div>
+  		  <div class="form-group">
+  			<label for="InputUsername"></label>
+  			<input name="username" type="username" class="form-control" id="username" placeholder="Username">
+  		  </div>
+  		  <div class="form-group">
+  			<label for="InputPassword"></label>
+  			<input name="password" type="password" class="form-control" id="password" placeholder="Password">
+  		  </div>
+            <a href=uni_select.html>
+  			<input type="submit" value="submit"/>
+  		  </a>
+  		</div>
+    	<div class="registerbutton">
+        <h4>Or login with facebook.</h4>        
+          <div id="auth-status">
+        <div id="auth-loggedout">
+          <a href="#" id="auth-loginlink"><img src="img/facebook_icon.png" /></a>
+        </div>
+        <div id="auth-loggedin" style="display:none">
+          Hi, <span id="auth-displayname"></span>  
+        (<a href="#" id="auth-logoutlink">logout</a>)
+      </div>
+    </div>
+  	  </form>
+    </div>
+    
+    <div class="elsebutton">
+        <button value="login" class="button" onClick="parent.location='index2.html'">Already have an account?</button>
+      </div>
 
-  <!--<div class="menu">Angular seed app: v<span app-version></span></div>-->
+    <div ng-view></div>
 
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-  -->
-  <script src="lib/angular/angular.js"></script>
-  <script src="lib/angular/angular-route.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/services.js"></script>
-  <script src="js/controllers.js"></script>
-  <script src="js/filters.js"></script>
-  <script src="js/directives.js"></script>
-  <script src="js/jQuery.js"></script>
-  <script src="js/express/index.js"></script>
-  <script src="js/mongoose/index.js"></script>
-  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-</body>
+    <!--<div class="menu">Angular seed app: v<span app-version></span></div>-->
+
+    <!-- In production use:
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    -->
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="js/jQuery.js"></script>
+    <script src="js/express/index.js"></script>
+    <script src="js/mongoose/index.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <html>
+
+  </body>
 </html>
