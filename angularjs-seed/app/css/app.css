@@ -95,7 +95,7 @@ input {
 	border-radius:5px;
 	margin-top:5px;
 	margin-bottom:5px;
-	margin-right:5%;
+	margin-left:5%;
 	border:none;
 	height:40px;
 	width:90%;
@@ -105,9 +105,9 @@ input {
 	font-family: 'Signika', sans-serif;
 	font-size:14px;
 	color:#FFF;
-	margin-right:5%;
 	height:40px;
 	width:90%;
+	margin-left:5%;
 	margin-top:5px;
 	border-bottom:2px, solid;
 	border-top:none;
