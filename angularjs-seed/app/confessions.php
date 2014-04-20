@@ -33,7 +33,7 @@ session_start();
 					
 					<form action="submit.php" method="post">
 					    <input class="form-control2" type="text" name="conf" id="conf"/>
-					    <input class="button2" type="submit" value="Make confession"/>
+					    <input class="button2" type="submit" value="Confess!"/>
 					</form>
 					
 				</div>

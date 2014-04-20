@@ -111,7 +111,7 @@ input {
 	margin-left:1%;
 	border:none;
 	height:24px;
-	width:78%;
+	width:75%;
 }
 
 .button {
@@ -203,6 +203,54 @@ body {
 	padding:8px;
 }
 
+
+
+/*main styling for confessions page*/
+.sidebar {
+	float:left;
+	margin-top:72px;
+	background:rgba(100, 100, 100, 0.7);
+	width:25%;
+	height:100%;
+	position:fixed;
+}
+
+.university-name {
+	float:right;
+	margin-top:72px;
+	height:128px;
+	width:70%;
+}
+.confessions {
+	float:right;
+	width:70%;
+	margin-right:2.5%;
+	margin-left:2.5%;
+	margin-top:200px;
+	background: rgba(100, 100, 100, 0.7);
+	clear:right;
+}
+/*styling across all pages*/
+h1 {
+	font-family: 'Signika', sans-serif;
+	font-size:35px;
+	text-align:center;
+	color:#ffffff;
+
+}
+
+h2 {}
+
+h3 {}
+
+h4 {
+	font-family: 'Signika', sans-serif;
+	text-align:center;
+	color:#f15b22;
+}
+
+/*uni_select webkit*/
+
 .uni-select {
 	width:60%%
 	left:20%;
@@ -251,48 +299,3 @@ body {
   clear: both;
   width:60%;
 }
-
-/*main styling for confessions page*/
-.sidebar {
-	float:left;
-	margin-top:72px;
-	background:rgba(100, 100, 100, 0.7);
-	width:25%;
-	height:100%;
-	position:fixed;
-}
-
-.university-name {
-	float:right;
-	margin-top:72px;
-	height:128px;
-	width:70%;
-}
-.confessions {
-	float:right;
-	width:70%;
-	margin-right:2.5%;
-	margin-left:2.5%;
-	margin-top:200px;
-	background: rgba(100, 100, 100, 0.7);
-	clear:right;
-}
-/*styling across all pages*/
-h1 {
-	font-family: 'Signika', sans-serif;
-	font-size:35px;
-	text-align:center;
-	color:#ffffff;
-
-}
-
-h2 {}
-
-h3 {}
-
-h4 {
-	font-family: 'Signika', sans-serif;
-	text-align:center;
-	color:#f15b22;
-}
-
