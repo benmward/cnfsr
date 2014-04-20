@@ -27,9 +27,6 @@
     			<img id="under" src="img/Uni_select_head.png" />
     			<div class="frame">
     				<div class="uni-item">
-    					<img src="img/viewall_logo.png" />
-    				</div>
-    				<div class="uni-item">
                         <img src="img/viewall_logo.png" />
                     </div>
                     <div class="uni-item">
