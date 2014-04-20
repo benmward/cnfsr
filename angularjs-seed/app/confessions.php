@@ -31,8 +31,8 @@ session_start();
 					<h4><?php  echo $_SESSION['username'];  ?></h4>
 					
 					<form action="submit.php" method="post">
-					    <input type="text" name="conf" id="conf"/>
-					    <input type="submit" value="Make confession"/>
+					    <input class="form-control2" type="text" name="conf" id="conf"/>
+					    <input class="button2" type="submit" value="Make confession"/>
 					</form>
 					
 				</div>
@@ -50,8 +50,8 @@ session_start();
 			        
 			        <form>
 			        
-			        <input type="text" placeholder="comment"/>
-			        <input class="button" type="submit"/>
+			        <input class="form-control2" type="text" placeholder="comment"/>
+			        <input class="button2" type="submit"/>
 			        
 			        </form>
 			        
