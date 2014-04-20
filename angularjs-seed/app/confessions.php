@@ -29,12 +29,16 @@ session_start();
 			<main>
 				<div class="sidebar">
 					<h4><?php  echo $_SESSION['username'];  ?></h4>
+					<h4><?php echo $_SESSION['email'];  ?></h4>
 					
 					<form action="submit.php" method="post">
 					    <input class="form-control2" type="text" name="conf" id="conf"/>
 					    <input class="button2" type="submit" value="Make confession"/>
 					</form>
 					
+				</div>
+				<div class="university-name">
+					<h1>George Mason University Confessions</h1>
 				</div>
 				<div class="confessions">
 				

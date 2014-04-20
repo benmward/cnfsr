@@ -108,10 +108,10 @@ input {
 	border-radius:5px;
 	margin-top:5px;
 	margin-bottom:5px;
-	margin-left:5%;
+	margin-left:1%;
 	border:none;
-	height:40px;
-	width:60%;
+	height:24px;
+	width:78%;
 }
 
 .button {
@@ -136,9 +136,9 @@ input {
 	font-family: 'Signika', sans-serif;
 	font-size:14px;
 	color:#FFF;
-	height:40px;
-	width:25%;
-	margin-left:5%;
+	height:25px;
+	width:20%;
+	margin-left:1%;
 	margin-top:5px;
 	border-bottom:2px, solid;
 	border-top:none;
@@ -262,6 +262,12 @@ body {
 	position:fixed;
 }
 
+.university-name {
+	float:right;
+	margin-top:72px;
+	height:128px;
+	width:70%;
+}
 .confessions {
 	float:right;
 	width:70%;
@@ -269,6 +275,7 @@ body {
 	margin-left:2.5%;
 	margin-top:200px;
 	background: rgba(100, 100, 100, 0.7);
+	clear:right;
 }
 /*styling across all pages*/
 h1 {
